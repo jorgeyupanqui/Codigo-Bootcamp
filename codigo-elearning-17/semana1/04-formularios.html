@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Formularios</h1>
+    </header>
+    <main>
+      <form>
+        <label for="inputNombres">Nombres:</label>
+        <input type="text" id="inputNombres" placeholder="Ej.: Jorge Osmar" required minlength="2" maxlength="10"/>
+        <br />
+        <label>Apellidos</label>
+        <input
+          type="text"
+          id="inputNombres"
+          placeholder="Ej.: Montesinos Aramayo"
+          pattern="[a-z]{1,}"
+        />
+        <br />
+        <label for="correo">email</label>
+        <input type="email" id="correo" placeholder="jorgec@codigo.edu" />
+        <br />
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" />
+        <br />
+        <label for="contraseña">Contraseña</label>
+        <input
+          type="password"
+          id="contraseña"
+          placeholder="Mayusculas y minusculas"
+        />
+        <br />
+        <h3>Genero</h3>
+        <input type="radio" id="radioFemenino" name="genero" />
+        <label for="radiofemenino">Femenino</label>
+        <input type="radio" id="radiomasculino" name="genero" />
+        <label for="radiomasculino">Masculino</label>
+        <input type="radio" id="radioNoDivulgar" name="genero" />
+        <label for="radioNoDivulgar">NoDivulgar</label>
+        <br />
+        <h3>Intereses</h3>
+        <label for="tiktok"> Ver Tiktok</label>
+        <input type="checkbox" id="tiktok" />
+        <label for="musica"> Musica</label>
+        <input type="checkbox" id="musica" />
+        <label for="futbol"> Futbol</label>
+        <input type="checkbox" id="futbol" />
+        <label for="peliculas"> Peliculas</label>
+        <input type="checkbox" id="Peliculas" />
+        <br />
+        <h3>Ciudad</h3>
+        <select>
+          <option>Arequipa</option>
+          <option>Lima</option>
+          <option>Huanuco</option>
+          <option>Lambayeque</option>
+          <option>Cusco</option>
+        </select>
+        <h3>Distritos</h3>
+        <input list="distritos" />
+        <datalist id="distritos">
+          <option>Lima</option>
+          <option>Pueblo Libre</option>
+          <option>Jesus Maria</option>
+          <option>Lince</option>
+          <option>Miraflores</option>
+        </datalist>
+        <hr />
+        <input type="reset" value="Limpiar" />
+        <input type="submit" value="Enviar Datos">
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+h1{
+    background-color: greenyellow;
+}
+
+/* etiqueta de clase*/
+.parrafo-header{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.boton-header{
+    border: 2px solid black;
+    border-radius: 25px;
+    height: 50px;
+    min-width: 120px;
+}
+.boton-importante {
+    background-color: black;
+    color: white;
+    /*border: 2px solid red; */
+}
+/* id-> #nombreid */
+#info{
+    color: brown;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+ul > li {
+    color:blue;
+    font-weight: bold;
+}
+
+ul li{
+    text-decoration: underline;
+}
+
+tr:nth-of-type(odd) {
+    background-color: aquamarine;
+}
+
+tr:nth-of-type(even) {
+    background-color: brown;
+}
+tr:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.mini-header{
+    color: red;
+    text-align: center;
+}
+.mini-header::before, .mini-header::after{
+    content:"\2022";
+    color: green;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*main > section :nth-child(1){
+    color: orange;
+}*/
+
+#elemento1{
+    color: deepskyblue;
+}
+
+section{
+    /*text-decoration: underline;*/
+    color: red;
+}
+
+.slogan {
+    /*text-decoration: double;*/
+    color: darkmagenta;
+}

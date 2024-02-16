@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: orange;
+}
+
+main{
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 768px){
+    header {
+        background-color: orangered;
+    }
+}
+
+@media screen and (max-width: 420px){
+    main{
+        background-color: steelblue;
+        font-family: Arial;
+    }
+}
+/*medida*/
+
+header{
+    width: 500px;
+}
+
+h1{
+    width: 50%;
+}
+
+h2{
+    width: 50vw;
+    border: 2px solid black;
+    height: 75vh;
+}
+
+/*html{
+    font-size: 10px;
+}*/
+
+p{
+    font-size: 2rem;
+}
+
+main{
+    font-size: 30px;
+}
+
+h2{
+    font-size: 0.5em;
+    padding: 1em;
+}
