@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+.container{
+    min-width: 800px;
+    max-width: 1200px;
+    min-height: 1000px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    grid-template-rows: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.card{
+    width:100%;
+    height:100%;
+    position: relative;
+    filter: grayscale(1);
+    transition-duration: 1s;
+    animation-duration: 1s;
+    animation-name: entrada;
+    animation-timing-function: ease-out;
+
+}
+
+.card:hover{
+    filter: grayscale(0);
+    transform: translate(0, 5px) scale(1.02);
+    box-shadow:  0 0 10px black;
+}
+
+.card > img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.card > p{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:nth-last-of-type(1){
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.card:nth-last-of-type(2){
+    grid-row: 1 / 3;
+}
+
+.card:nth-last-of-type(3){
+    grid-row: 1 / 3;
+}
+
+.card:nth-last-of-type(4){
+    grid-row: 2 / 4;
+}
+
+.card:nth-last-of-type(5){
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.card:nth-last-of-type(8){
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+}
+
+@keyframes entrada{
+    0%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.05);
+    }
+    1000%{
+        transform: scale(1);
+    }
+}
+
+
+
