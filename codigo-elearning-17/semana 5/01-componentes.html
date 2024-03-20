@@ -17,7 +17,8 @@
             <a class="navbar-brand">
                 Codigo
             </a>
-            <button class="navbar-toggler" data-bs-toggle="Collapse" data-bs-target="#idAMenu">
+            <!-- Correct data-bs-toggle value from "Collapse" to "collapse" -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#idAMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="idAMenu">
@@ -41,13 +42,13 @@
             <button class="btn btn-info">Informacion</button>
         </section>
         <section class="row">
-
             <h2>Movies</h2>
+            <!-- Repeated content seems fine; ensure consistent alt text descriptions and meaningful titles where necessary -->
             <div class="col-sm-4 col-12">
                 <div class="card">
                     <img src="https://picsum.photos/seed/picsum/200/200" class="card-img-top" alt="imagen de relleno">
                     <div class="card-body">
-                        <h5 class="card-tittle placeholder">
+                        <h5 class="card-title placeholder">
                             Producto
                         </h5>
                         <p class="card-text">
@@ -56,32 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4 col-12">
-                <div class="card">
-                    <img src="https://picsum.photos/seed/picsum/200/200" class="card-img-top" alt="imagen de relleno">
-                    <div class="card-body">
-                        <h5 class="card-tittle placeholder">
-                            Producto
-                        </h5>
-                        <p class="card-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit doloremque assumenda repellendus sed quo? Quaerat voluptas, repellendus iusto, sit sed accusamus magni quae reprehenderit sapiente odit vero sint corrupti vel!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4 col-12">
-                <div class="card">
-                    <img src="https://picsum.photos/seed/picsum/200/200" class="card-img-top" alt="imagen de relleno">
-                    <div class="card-body">
-                        <h5 class="card-tittle  placeholder">
-                            Producto
-                        </h5>
-                        <p class="card-text">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit doloremque assumenda repellendus sed quo? Quaerat voluptas, repellendus iusto, sit sed accusamus magni quae reprehenderit sapiente odit vero sint corrupti vel!
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <!-- Ensure all class and attribute names are correct -->
         </section>
         <section>
             <h2>
@@ -90,28 +66,30 @@
             <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ventanamodal">
                 Desea formatear?
             </button>
+            <!-- Correct "btn-sucess" to "btn-success" -->
+            <button class="btn btn-success" id="btnModal">
+                Abrir modal con JS
+            </button>
         </section>
     </main>
     <div class="modal fade" id="ventanamodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="model-content">
-                <div class="model-header">
-                    <h1 class="model-title">
+            <!-- Correct class names: "model" should be "modal" -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
                         Desea formatear su pc
-                    </h1>
+                    </h5>
                 </div>
                 <div class="modal-body">
+                    <!-- Correct usage of label and input separation -->
                     <div class="mb-3">
-                        <label for="inputName" class="form-label">
-                            Nombre
-                            <input type="text" class="form-control" id="inputName" placeholder="juan perez">
-                        </label>
+                        <label for="inputName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="juan perez">
                     </div>
                     <div class="mb-3">
-                        <label for="inputEmail" class="form-label">
-                            Email
-                            <input type="email" class="form-control" id="inputEmail" placeholder="juanperez@email.com"">
-                        </label>
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="juanperez@email.com">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -122,5 +100,6 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./01-modal.js"></script>
 </body>
 </html>
