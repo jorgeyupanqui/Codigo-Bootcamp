@@ -1,3 +1,16 @@
+:root{
+    --color-green:#75BF7A;
+}
+
 /**{
     border:1px solid gray;
 }*/
+
+.color-green-otere{
+    color: var(--color-green);
+}
+
+.bg-green-otere{
+    background-color: var(--color-green);
+}
+
