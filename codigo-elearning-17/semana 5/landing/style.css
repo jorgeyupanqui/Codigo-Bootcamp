@@ -5,6 +5,9 @@
 /**{
     border:1px solid gray;
 }*/
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 .color-green-otere{
     color: var(--color-green);
