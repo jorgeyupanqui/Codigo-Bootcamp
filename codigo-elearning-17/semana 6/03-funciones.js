@@ -46,3 +46,19 @@ function prepararArrozConPollo(paso1,paso2,paso3){
 }
 
 prepararArrozConPollo(picarVegetales,granearArroz,freirPolloYHuevo);
+
+console.log(`Estamos en el mes numero ${mes}`)
+
+var mes = 1;
+
+saludo()
+
+function saludo(){
+    console.log("Hola");
+}
+
+let despedida = (nombre) =>{
+    console.log(`Hasta luego ${nombre}`);
+}
+
+despedida("Juan");
